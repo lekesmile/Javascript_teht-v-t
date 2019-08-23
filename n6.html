@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tehtävä 6</title>
+<style>
+ #div1 {
+ height: 200px;
+ width: 20%;
+ background-color: green;
+ margin: 10px;
+ }
+
+ #div2 {
+ height: 100px;
+ width: 40%;
+ background-color: grey;
+ margin: 10px;
+ }
+</style>
+
+</head>
+<body>
+    
+   <h1>Tehtävä 6 </h1> 
+
+  <p>  Ensimmäisen div - #div1 korkeuden on aina oltava yhtä suuri kuin toisen div #div2 leveys. Ikkunan koon muuttamisen
+    yhteydessä sinun pitäisi näyttää konsolissa:</p>
+
+   <li>* toisen div #div2 leveys </li> 
+
+   <li>* ensimmäisen div #div1 korkeus</li> 
+
+   <p>The height of the first div #div1 always has to be equal to the width of the second div #div2. At window resize, you
+    should display in the console:</p> 
+
+    <li>* the width of the second div #div2</li> 
+
+    <li>* the height of the first div #div1</li>
+
+
+    <div>
+       <div id="div1"></div>
+       <div id="div2"></div>
+
+    </div>
+
+    <script>
+     window.addEventListener("resize", function() {
+     let height = div1.clientHeight;
+     let width = div2.clientWidth;
+
+     document.getElementById('div1').style.height = console.log(width + 'px');
+     });
+    </script>
+</body>
+</html>

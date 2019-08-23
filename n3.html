@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tehtävä 3</title>
+    <style>
+        #cirlce{
+       
+        margin-top: 50px;
+        position: relative;
+        width: 400px;
+        height: 400px;
+        }
+        #round {
+            background-color: red;
+            width: 50px;
+            height: 50px;
+            position: relative;
+            border-radius: 100%;
+          
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Tehtävä 3</h1>
+    <p>
+
+        Animoi punainen ympyrä javascriptin avulla. Sen on liikuttava vasemmalta 0 oikealle 300 kuvapistettä ja
+        pysähtyvä
+        sitten.
+    </p>
+    <p>
+        You have to animate the red circle with javascript. It has to move from left 0 to the right 300px and then stop
+    </p>
+
+    <div id="cirlce">
+        <div id="round">
+
+        </div>
+    </div>
+
+
+
+    <script>
+        window.addEventListener('load', myMove);
+
+        
+        function myMove() {
+        
+            var element = document.getElementById("round");
+            var pos = 0;
+            
+
+            const frame = () => {
+                if (pos == 300) {
+                    clearInterval(id);
+                } else {
+                    pos++;
+                    element.style.left = pos + "px";
+                }
+            }
+            var id = setInterval(frame, 5);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tehtävä 7</title>
+</head>
+<body>
+    
+<h1>Tehtävä 7</h1>  
+
+<p> Kun sivu latautuu, ponnahdusikkuna on näytettävä seuraavalla kysymyksellä: “Tiedätkö jo jonkin verran Javascriptista”
+Kun napsautat “kyllä”, ponnahdusikkuna sulkeutuu ja viesti “:)” on näytettävä konsolissa selaimen.
+</p>
+<p>
+When the page loads, a popup has to be displayed with the following question: “Do you know a bit already about
+Javascript” When clicking on “yes” the popup close itself and the message “:)” has to be displayed in the console of the
+browser.
+</p>
+
+    <script>
+        
+    window.addEventListener('load', ()=>{
+   let question = prompt('Do you know JavaScript ?');
+    if(question == 'yes' ){
+        console.log(question);
+    }
+})
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+

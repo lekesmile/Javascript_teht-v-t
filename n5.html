@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tehtävä 5</title>
+</head>
+<body>
+    
+<h1>Tehtävä 5</h1>
+
+<p> Kun painat näppäimistön "Enter" -näppäintä, viesti “Bravo” on näytettävä hälytysruudussa. Jos painat jotakin muuta
+näppäintä, näytölle ilmestyy "Yritä uudelleen".
+</p>
+
+<p>
+When you hit “Enter” on your keyboard, the message “Bravo” has to be displayed in an alert box. If you press some other
+keys „Try again“ will be displayed on the console.
+</p>
+
+
+<h3>Open the console to view the result</h3>
+
+
+
+
+
+    <script>
+
+       const eventKey = (e) => {
+
+       var x = e.keyCode;
+       if (x === 13) {
+       alert('Bravo');
+       }
+       else {
+       console.log('try again');
+       }
+
+       }
+       window.addEventListener('keypress', eventKey);
+
+    </script>
+</body>
+</html>

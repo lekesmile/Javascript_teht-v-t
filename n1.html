@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tehtävä 1</title>
+</head>
+
+<h1>Tehtävä 1</h1>
+<p>
+    Sinun on luotava javascript-toiminto, joka laskee välillä 0 - 100. Kun saavutat 100, laskuri palaa arvoon 0 ja
+    laskee jatkuvasti alusta. Näytät laskurin selaimen konsolissa nopeudella 120 ms.
+</p>
+
+<p>
+    You have to create a javascript function that counts from 0 to 100. When reaching 100, the counter gets back to 0
+    and keeps counting from start again. You will display the counter in the console of the browser with a speed of 120
+    ms.
+</p>
+
+<h3>Open the console to view the result !</h3>
+<body>
+
+
+
+
+    <script>
+        let number = 0;
+
+        const count = () => {
+            if (number <= 99) {
+                number++;
+                console.log(number);
+            } else {
+                number = 0;
+            }
+        }
+
+        setInterval(count, 1000);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Tehtävä 4</title>
+   <style>
+     .hide {
+     visibility: hidden;
+     }
+
+     div {
+     margin: 500px auto;
+     border: 1px solid green;
+     width: 200px;
+     height: 100px;
+     }
+    
+   </style>
+</head>
+
+<body>
+   <h1> Tehtävä 4</h1>
+
+
+   <p> Kun vierittää sivua alaspäin 200px: n asti ja sen yli, ponnahdusikkuna #popup on näytettävä. Jos vierität
+      taaksepäin
+      alle 200 kuvapistettä, ponnahdusikkuna on piilotettava.
+   </p>
+
+   <p>
+      When you scroll to 200px, and beyond, the popup #popup has to be displayed. If you scroll back under 200px, the
+      popup
+      has to be hidden.
+   </p>
+
+   
+    
+    
+
+      
+            <div id="hideDisplay" onscroll="scrollFunction()">Now you see me & now you see me no more.</div>
+
+
+
+      <script>
+        
+        window.onscroll = function() {scrollFunction()};
+
+        let elem = document.getElementById('hideDisplay');
+
+
+
+        function scrollFunction() {
+
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+
+        document.getElementById("hideDisplay").className = "hide";
+
+        } else {
+
+        document.getElementById("hideDisplay").className = "";
+
+        }
+
+        };
+      </script>
+</body>
+
+</html>
